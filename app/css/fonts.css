@@ -1,0 +1,27 @@
+﻿@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('../fonts/MyriadProRegular/MyriadProRegular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url('../fonts/MyriadProRegular/MyriadProBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Bauhaus';
+    src: url('../fonts/bauhaus_md_bt.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/ArialRegular/ArialRegular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}

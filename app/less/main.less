@@ -1,0 +1,217 @@
+// colors
+@color-acent: #e77000;
+body {
+    font-family: "MyriadProRegular", sans-serif;
+    font-size: 16px;
+    min-width: 320px;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    background-image: url('../img/Layer-31.jpg');
+    height: 600px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.52);
+}
+
+nav {
+    height: 150px;
+    background: rgba(0, 0, 0, 0.52);
+}
+
+#top-nav{
+    width: 992px;
+    margin: 0 auto;
+}
+
+.nav-top{
+    height: 55px;
+    margin-top: 30px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 20px;
+     }
+    .my-logo{
+        display: inline-block;
+        width: 190px;
+        line-height: 13px;
+        padding: 10px 0;
+        a {
+            text-decoration: none;
+            font-family: "Bauhaus", sans-serif;  
+            font-size: 30px;  
+            color: #ffffff;
+            font-weight: bold;
+            &:hover,
+            &:focus{
+            text-decoration: none;
+            color: @color-acent;
+        }
+    }
+    span {
+        left: 45px;
+        top: 4px;
+        position: relative;
+        font-family: "Arial", sans-serif;
+        font-size: 17px;
+    }
+}
+
+.menu-nav {
+    list-style-type: none;
+    padding: 0;
+
+    &>li {
+        &:first-child {
+            padding-left: 0px;
+        }
+        display: inline-block;
+        padding: 0 20px;
+        border-right: 2px solid #ffffff;
+        line-height: 10px;
+        &:nth-last-child(1) {
+            border-right: none;
+        }
+    }
+    a {
+        text-decoration: none;
+        font-size: 10pt;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: "MyriadProRegular", sans-serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+        &:hover,
+        &:focus {
+           text-decoration: none;
+           color: @color-acent;
+       }
+    }
+}
+
+.my-menu {
+    position: relative;
+    bottom: 52px;
+    margin-left: 170px;
+    list-style-type: none;
+    li {
+        display: inline-block;
+        margin-right: 10px;
+        .block-coll{
+            font-size: 20px;
+            position: relative;
+            bottom: 10px;
+        }
+    }
+}
+
+.icon{
+    width: 35px;
+    height: 35px;
+    float: left;
+    background: url(../img/icons_35.png) no-repeat;
+    &.viber{
+        background-position: 3px 0px;
+        cursor: pointer;
+    }
+    &.mobCol{
+        background-position: -34px 0px;
+        cursor: pointer;
+    }
+    &.telegram{
+        background-position: -75px 0px;
+        cursor: pointer;
+    }
+    &.callrepit{
+        background-position: -114px 0px;
+        cursor: pointer;
+    }
+    &.skype{
+        background-position: -338px 0px;
+        cursor: pointer;
+    }
+}
+
+.social{
+    position: relative;
+    float: right;
+    bottom: 110px;
+    font-size: 12px;
+    li{
+        display: block;
+        float: left;
+        width: 30px;
+        height: 30px;
+        text-decoration: none;
+        padding: 5px;
+        background: #fdfdfd;
+        border-radius: 25px;
+        border: 1px solid #fdfdfd;
+        margin-right: 10px;
+        cursor: pointer;
+        &:hover,
+        &:focus{
+            background: @color-acent;
+            border: 1px solid @color-acent;
+        }
+        &:nth-child(2){
+            padding-left: 9px;
+        }
+        a{
+            text-decoration: none;
+        }
+        i{
+            color: #4f5150;
+        }
+    }
+}
+
+.my-carousel{
+    height: 100%;
+    padding: 5% 0 5% 0;
+    h3 {
+        color: #ffffff;
+        width: 52%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    p {
+        width: 50%;
+        color: #d0d0d0;
+        font-style: italic;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+}
+.my-control-icon {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    a {  
+    margin: 0 10% 0 10%;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(138, 160, 159, 0.42);
+    border: 1px solid rgba(138, 160, 159, 0.42);
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    }
+    
+    i {
+        font-size: 55px;
+        font-weight: 900;
+        color: #003e3d;
+    }
+}
+.my-control-left {
+    float: left;
+}
+
+.my-control-right {
+    float: right;
+}
+.my-carousel-inner {
+    text-align: center;
+}
