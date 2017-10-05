@@ -5,6 +5,13 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "MyriadProRegular", sans-serif;
+}
 header {
   background-image: url('../img/Layer-31.jpg');
   height: 600px;
@@ -138,8 +145,8 @@ nav {
   text-decoration: none;
   padding: 5px;
   background: #fdfdfd;
-  -webkit-border-radius: 25px;
-          border-radius: 25px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   border: 1px solid #fdfdfd;
   margin-right: 10px;
   cursor: pointer;
@@ -158,36 +165,78 @@ nav {
 .social li i {
   color: #4f5150;
 }
+.my-social-2 {
+  padding: 10px 58px;
+  height: 70px;
+}
+.my-social-2 li {
+  width: 45px;
+  height: 45px;
+  display: block;
+  float: left;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 2px solid #828282;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin-right: 3px;
+  cursor: pointer;
+}
+.my-social-2 li i {
+  color: #828282;
+}
+.my-social-2 li:nth-child(1) {
+  padding: 8px 10px;
+}
 .my-carousel {
   height: 100%;
-  padding: 5% 0 5% 0;
 }
 .my-carousel h3 {
-  color: #ffffff;
-  width: 52%;
-  margin: 0 auto;
-  padding-bottom: 30px;
+  font-family: "MyriadProBold", sans-serif;
+  color: #fdfffc;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+.my-carousel h3 b {
+  color: #7fa668;
 }
 .my-carousel p {
-  width: 50%;
+  font-size: 22px;
   color: #d0d0d0;
-  font-style: italic;
-  margin: 0 auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.my-carousel p b {
+  color: #f9b801;
+  font-size: 26px;
+  font-weight: bold;
+}
+.my-carousel .my-indicators {
+  position: relative;
+  top: 90px;
+}
+.my-carousel .my-indicators li {
+  background: #ffffff;
+}
+.my-carousel .my-indicators .active {
+  width: 16px;
+  height: 16px;
 }
 .my-control-icon {
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 10%;
 }
 .my-control-icon a {
-  margin: 0 10% 0 10%;
   height: 50px;
   width: 50px;
-  background-color: rgba(138, 160, 159, 0.42);
+  background: rgba(138, 160, 159, 0.42);
   border: 1px solid rgba(138, 160, 159, 0.42);
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.my-control-icon a:hover,
+.my-control-icon a:focus {
+  background: #fefefe;
 }
 .my-control-icon i {
   font-size: 55px;
@@ -196,10 +245,90 @@ nav {
 }
 .my-control-left {
   float: left;
+  margin-left: 100px;
+}
+.my-control-left i {
+  position: relative;
+  bottom: 5px;
+  left: 9px;
 }
 .my-control-right {
   float: right;
+  margin-right: 100px;
+}
+.my-control-right i {
+  position: relative;
+  left: 16px;
+  bottom: 5px;
 }
 .my-carousel-inner {
+  margin-top: 100px;
   text-align: center;
+}
+.my-btn-success {
+  padding: 6px 7px;
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: transparent;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+.my-btn-order {
+  padding: 5px 25px;
+  border: 2px solid #7fa668;
+  -webkit-border-radius: 2px;
+  border-radius: 15px;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: #7fa668;
+}
+.my-main-top {
+  border-bottom: 1px solid #e3e3e3;
+}
+.my-main-top p {
+  color: #ccc;
+  font-size: 19px;
+}
+.my-title {
+  text-align: center;
+  padding: 40px 0;
+}
+.my-title h1 {
+  color: #666261;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.my-blk-product {
+  width: 350px;
+  height: 100%;
+  margin: 0 20px 30px 20px;
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 3%;
+          border-radius: 3%;
+}
+.my-blk-product p {
+  text-align: center;
+  padding: 5px;
+}
+.my-blk-product span {
+  font-size: 52px;
+  font-weight: bold;
+  margin: 0 10px 0 75px;
+}
+.my-blk-product i {
+  color: #df0020;
+}
+.my-blk-product button {
+  margin: 10px 29% 0 29%;
+}
+.my-blk-product button:hover,
+.my-blk-product button:focus {
+  background: #7fa668;
+  color: #ffffff;
 }

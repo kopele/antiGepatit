@@ -82,6 +82,5 @@ gulp.task('img', function(){
 
 gulp.task('default', ['browser-sync', 'scripts'], function () {
   gulp.watch('app/less/*.less', ['less']);
-  gulp.watch(['app/*.html', 'app/js/*.js', 'app/less/*.less']);
-  reload;
+  gulp.watch(['app/*.html', 'app/js/*.js', 'app/less/*.less'], reload);
 });
