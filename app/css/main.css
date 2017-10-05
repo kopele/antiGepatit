@@ -332,3 +332,8 @@ nav {
   background: #7fa668;
   color: #ffffff;
 }
+.my-blk-certi {
+  background: url(../img/Layer-16-copy.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+}
