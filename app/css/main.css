@@ -299,9 +299,11 @@ nav {
   padding: 40px 0;
 }
 .my-title h1 {
+  font-family: "MyriadProBold", sans-serif;
+  text-transform: uppercase;
   color: #666261;
-  font-weight: bold;
   margin-bottom: 30px;
+  font-size: 24px;
 }
 .my-blk-product {
   width: 350px;
@@ -336,4 +338,75 @@ nav {
   background: url(../img/Layer-16-copy.jpg);
   -webkit-background-size: cover;
   background-size: cover;
+}
+#carousel2 {
+  position: relative;
+  width: 84%;
+  padding: 10px 40px;
+  margin: 0 auto;
+}
+#carousel2 img {
+  display: block;
+}
+#carousel2 a:focus {
+  outline: none;
+}
+#carousel2 a:hover {
+  color: #ccc;
+  cursor: pointer;
+}
+.arrow {
+  position: absolute;
+  top: 35px;
+  padding: 0;
+  color: #444;
+  display: block;
+}
+.arrow i {
+  font-size: 12em;
+}
+.prev {
+  left: -60px;
+}
+.next {
+  right: -60px;
+}
+.gallery {
+  overflow: hidden;
+}
+.gallery ul {
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-transition: margin-left 250ms;
+  -o-transition: margin-left 250ms;
+  transition: margin-left 250ms;
+  font-size: 0;
+}
+.gallery li {
+  display: inline-block;
+  margin: 0 100px 0 0;
+  height: 320px;
+}
+.gallery img {
+  border: 7px solid #030303;
+  -webkit-box-shadow: 10px 5px 5px #030303;
+  box-shadow: -12px 11px 20px 0px rgba(3, 3, 3, 0.24);
+}
+.zoom {
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+.zoom:hover,
+.zoom:active,
+.zoom:focus {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  position: relative;
+  z-index: 9999;
 }

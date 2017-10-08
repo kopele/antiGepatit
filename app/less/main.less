@@ -311,9 +311,11 @@ nav {
     text-align: center;
     padding: 40px 0;
     h1{
+        font-family: "MyriadProBold", sans-serif;
+        text-transform: uppercase;
         color: #666261;
-        font-weight: bold;
         margin-bottom: 30px;
+        font-size: 24px;
     }
 }
 
@@ -352,22 +354,85 @@ nav {
     background-size: cover;
 }
 
-// .carousel-inner {
-//     .active.left {
-//         left: -25%; 
-//     }
-//     .next{
-//          left:  25%; 
-//     }
-//     .prev{ 
-//         left: -25%; 
-//     }
-// }
-// .carousel-control{
-//     width:  4%; 
-//     &.left,
-//     &.right{
-//         margin-left:15px;
-//         background-image:none;
-//     }
-// }
+//carousel2
+#carousel2 {
+    position: relative;
+    width: 84%;
+    padding: 10px 40px;
+    margin: 0 auto;
+    img {
+        display: block;
+      }
+    a{
+        &:focus {
+            outline: none;
+          }
+        &:hover {
+            color: #ccc;
+            cursor: pointer;
+        }  
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    top: 35px;
+    padding: 0;
+    color: #444;
+    display: block;
+    i{
+        font-size: 12em;
+    }
+  }
+
+  .prev {
+    left: -60px;
+  }
+  
+  .next {
+    right: -60px;
+  }
+  
+  .gallery {
+    overflow: hidden;
+    ul {
+        width: 9999px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        transition: margin-left 250ms;
+        font-size: 0;
+      }
+      li {
+        display: inline-block;
+        margin: 0 100px 0 0;
+        height: 320px;
+      }
+      img {
+        border: 7px solid #030303;
+        -webkit-box-shadow: 10px 5px 5px #030303;
+        box-shadow: -12px 11px 20px 0px rgba(3, 3, 3, 0.24);
+      }
+}  
+
+.zoom {      
+@sumSec: 0.35s;
+@sumSc: 1.5;
+-webkit-transition: all @sumSec ease-in-out;    
+-moz-transition: all @sumSec ease-in-out;    
+transition: all @sumSec ease-in-out;     
+cursor: -webkit-zoom-in;      
+cursor: -moz-zoom-in;      
+cursor: zoom-in;  
+&:hover,  
+&:active,   
+&:focus {
+-ms-transform: scale(@sumSc);    
+-moz-transform: scale(@sumSc);  
+-webkit-transform: scale(@sumSc);  
+-o-transform: scale(@sumSc);  
+transform: scale(@sumSc);    
+position:relative;      
+z-index: 9999;  
+  }
+}
