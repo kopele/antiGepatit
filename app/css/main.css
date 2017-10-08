@@ -287,12 +287,12 @@ nav {
   font-weight: bold;
   color: #7fa668;
 }
-.my-main-top {
-  border-bottom: 1px solid #e3e3e3;
-}
-.my-main-top p {
-  color: #ccc;
+.my-main-txt p {
+  color: #999999;
   font-size: 19px;
+}
+.my-br {
+  border-bottom: 2px solid #e3e3e3;
 }
 .my-title {
   text-align: center;
@@ -409,4 +409,25 @@ nav {
   transform: scale(1.5);
   position: relative;
   z-index: 9999;
+}
+.my-blk-tips {
+  text-align: left;
+}
+.my-blk-tips h1 {
+  font-size: 18px;
+}
+.my-blk-tips p {
+  font-size: 17px;
+}
+.my-news h1::before {
+  content: "";
+  position: absolute;
+  top: 90px;
+  height: 3px;
+  width: 155px;
+  background: #9d9d9d;
+}
+.aboutus {
+  background-color: #efefef;
+  padding: 0 136px;
 }
