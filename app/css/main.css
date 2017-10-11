@@ -357,7 +357,7 @@ nav {
 }
 .arrow {
   position: absolute;
-  top: 35px;
+  top: 120px;
   padding: 0;
   color: #444;
   display: block;
@@ -386,8 +386,7 @@ nav {
 }
 .gallery li {
   display: inline-block;
-  margin: 0 100px 0 0;
-  height: 320px;
+  margin: 70px 35px 70px 35px;
 }
 .gallery img {
   border: 7px solid #030303;
